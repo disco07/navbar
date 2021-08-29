@@ -207,6 +207,11 @@ a, a:hover {
     color: crimson !important;
 }
 
+.nav-items:hover .cart-num {
+    background-color: crimson;
+    color: #fff !important;
+}
+
 .nav-items:hover .nav-user-div::before {
     background-image: url(user_color.svg);
 }
