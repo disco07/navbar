@@ -1,0 +1,221 @@
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #161d31;
+}
+
+.header {
+    background-color: #fff;
+    color: #262626;
+    width: 100%;
+    position: relative;
+    font-family: 'source-sans-pro', 'Source Sans Pro', 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    min-height: 70px;
+    text-align: left;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 20%);
+    z-index: 999;
+}
+
+.header-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.container-header {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    width: 760px;
+}
+
+@media (min-width: 760px) {
+    .container-header {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: auto;
+    }
+}
+
+@media (min-width: 1020px) {
+    .container-header {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: auto;
+    }
+}
+
+@media (min-width: 1260px) {
+    .container-header {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1200px;
+    }
+}
+
+.l-header {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.deposit-ads {
+    display: inline-table;
+    margin-left: 10px;
+}
+
+.deposit-ads-button {
+    display: inline-block;
+    padding: 9px 12px;
+    border: 1px solid #161d31;
+    color: #161d31;
+    background-color: white;
+    border-radius: 12px;
+    font-size: 16px;
+    text-align: center;
+    transition: all 0.2s ease;
+    font-weight: 400;
+    text-decoration: none;
+    outline: none;
+}
+
+.deposit-ads-button svg {
+    margin-right: 5px;
+    fill: #161d31;
+    transition: all 0.2s ease;
+}
+
+.deposit-ads-button:hover {
+    border: 1px solid #ddd;
+    color: #fff;
+    background-color: #161d31;
+}
+
+.deposit-ads-button:hover svg {
+    fill: #fff;
+}
+
+.r-header {
+    display: flex;
+    align-items: center;
+}
+
+.r-header div {
+    margin: 5px;
+}
+
+.nav-item,
+.nav-cart {
+    position: relative;
+    color: #161d31;
+}
+
+.nav-user-div,
+.nav-user-div span,
+.nav-item a,
+.nav-cart a {
+    display: flex;
+}
+
+.nav-item-div,
+.nav-cart-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-cart a::before {
+    content: "";
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    background-image: url(shopping-cart.svg);
+}
+
+.nav-item.favorite a::before {
+    content: "";
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    background-image: url(heart.svg);
+}
+
+.nav-item.home a::before {
+    content: "";
+    margin-top: 0;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    background-image: url(home.svg);
+}
+
+.nav-user-div::before {
+    content: "";
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    background-image: url(user.svg);
+    background-repeat: no-repeat;
+}
+
+.cart-num {
+    max-width: 25px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #161d31;
+    color: #fff;
+    font-size: 12px;
+}
+
+.item-text {
+    display: block;
+    font-size: 15px;
+    color: #161d31;
+    width: 50px;
+    overflow: hidden;
+}
+
+.nav-item.user .nav-item-div span {
+    width: auto;
+}
+
+.nav-items:hover a,
+.nav-items:hover span {
+    color: crimson !important;
+}
+
+.nav-items:hover .nav-user-div::before {
+    background-image: url(user_color.svg);
+}
+.nav-items.favorite:hover a::before {
+    background-image: url(heart_color.svg);
+}
+.nav-items.home:hover a::before {
+    background-image: url(home_color.svg);
+}
+.nav-items.cart:hover a::before {
+    background-image: url(shopping-cart_color.svg);
+}
