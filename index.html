@@ -11,13 +11,12 @@
 </head>
 <body>
     <div class="header">
-        <div class="container-header">
-        <div class="header-wrap">
+        <div class="header-wrap container-header">
             <div class="l-header">
                 <div class="site-logo">
                     <a href="/"><img src="t.png" alt="logo"></a>
                 </div>
-                <div class="deposit-ads">
+                <div class="deposit-ads hidden-sm">
                     <a href="" class="deposit-ads-button">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlnsxlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
                             <path id="a" d="M9.022.9c.483 0 .874.39.874.872v6.356h6.33a.873.873 0 1 1 0 1.744l-6.33-.001v6.357a.873.873 0 0 1-.874.872.873.873 0 0 1-.874-.872l-.001-6.357H1.774a.873.873 0 1 1 0-1.743h6.373V1.772c0-.482.392-.872.875-.872z"></path>
@@ -25,26 +24,71 @@
                         Ajouter une annonce
                     </a>
                 </div>
+                <div class="nav-item nav-items category hidden-sm">
+                    <a rel="nofollow" class="cat" href="">
+                        <div class="nav-item-div" style="margin: 11px;">
+                            <span class="item-text">Categories</span>
+                        </div>
+                    </a>
+                    <div class="category-container">
+                        <div class="cat-left">
+                            <div class="category-items">
+                                <a class="category-item">
+                                    <div>
+                                        
+                                    </div>
+                                    <div>Toutes catégories</div>
+                                </a>
+                            </div>
+                            <div class="category-items">
+                                <a class="category-item">Vehicule</a>
+                            </div>
+                            <div class="category-items">
+                                <a class="category-item">Immobilier</a>
+                            </div>
+                            <div class="category-items">
+                                <a class="category-item">Multimedia</a>
+                            </div>
+                            <div class="category-items">
+                                <a class="category-item">Animaux</a>
+                            </div>
+                        </div>
+                        <div class="cat-right">
+                            <div class="subcategory-items">
+                                <a class="subcategory-item">Voiture</a>
+                            </div>
+                            <div class="subcategory-items">
+                                <a class="subcategory-item">Moto</a>
+                            </div>
+                            <div class="subcategory-items">
+                                <a class="subcategory-item">Camion</a>
+                            </div>
+                            <div class="subcategory-items">
+                                <a class="subcategory-item">Caravane</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <nav>
                 <div class="r-header">
                     <div class="nav-item nav-items home">
                         <a rel="nofollow" href="">
-                            <div class="nav-item-div">
+                            <div class="nav-item-div hidden-sm">
                                 <span class="item-text">Accueil</span>
                             </div>
                         </a>
                     </div>
                     <div class="nav-item nav-items favorite">
                         <a rel="nofollow" href="">
-                            <div class="nav-item-div">
+                            <div class="nav-item-div hidden-sm">
                                 <span class="item-text">Mes favoris</span>
                             </div>
                         </a>
                     </div>
                     <div class="nav-cart nav-items cart">
                         <a rel="nofollow" href="">
-                            <div class="nav-cart-div">
+                            <div class="nav-cart-div hidden-sm">
                                 <span class="cart-num">0</span>
                                 <span class="item-text">Panier</span>
                             </div>
@@ -52,19 +96,41 @@
                     </div>
                     <div class="nav-item nav-items user">
                         <div class="nav-user-div">
-                            <div class="nav-item-div">
-                                <span class="item-text">Mon compte</span>
+                            <div class="nav-item-div hidden-sm">
+                                <span class="item-text account">Mon compte</span>
                                 <span class="item-text">
-                                    <a href="">Se connecter</a>
+                                    <a class="signin" href="">Se connecter</a>
                                     <span style="color: #e9e9e9; margin: 0 5px">|</span>
-                                    <a href="">S'inscrire</a>
+                                    <a class="signout" href="">S'inscrire</a>
                                 </span>
                             </div>
                         </div>
                     </div>
+                    <div class="nav-item-sm nav-items category">
+                        <span>
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M492,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,236,492,236z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M492,76H20C8.954,76,0,84.954,0,96s8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,76,492,76z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M492,396H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20
+			C512,404.954,503.046,396,492,396z"/>
+	</g>
+</g>
+</svg>
+                        </span>
+                    </div>
                 </div>
             </nav>
-        </div>
         </div>
     </div>
     

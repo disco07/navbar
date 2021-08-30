@@ -39,7 +39,7 @@ a, a:hover {
     margin-left: auto;
     padding-left: 0;
     padding-right: 0;
-    width: 760px;
+    width: auto;
 }
 
 @media (min-width: 760px) {
@@ -71,6 +71,7 @@ a, a:hover {
 .l-header {
     display: flex;
     align-items: center;
+    margin: 0 10px
 }
 
 .site-logo img {
@@ -80,7 +81,7 @@ a, a:hover {
 
 .deposit-ads {
     display: inline-table;
-    margin-left: 10px;
+    margin: 0 10px;
 }
 
 .deposit-ads-button {
@@ -90,7 +91,7 @@ a, a:hover {
     color: #161d31;
     background-color: white;
     border-radius: 12px;
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
     transition: all 0.2s ease;
     font-weight: 400;
@@ -101,6 +102,7 @@ a, a:hover {
 .deposit-ads-button svg {
     margin-right: 5px;
     fill: #161d31;
+    vertical-align: bottom;
     transition: all 0.2s ease;
 }
 
@@ -151,6 +153,50 @@ a, a:hover {
     background-image: url(shopping-cart.svg);
 }
 
+.nav-item.category {
+    position: relative;
+}
+
+.nav-item.category a.cat::before {
+    content: "";
+    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    background-image: url(menu.svg);
+}
+
+.category-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 890px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.8rem;
+    box-shadow: rgb(26 26 26 / 8%) 0px -1px 4px 0px, rgb(26 26 26 / 12%) 0px 4px 8px 0px;
+    padding: 0px;
+}
+
+.cat-left {
+    border-right: 1px solid #e6ebef;
+    width: 29rem;
+    flex: 0.4;
+}
+
+.category-items .category-item {
+    transition: background .2s;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: .4rem .8rem;
+    border-radius: 4px;
+    min-height: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .nav-item.favorite a::before {
     content: "";
     margin-top: 10px;
@@ -192,19 +238,28 @@ a, a:hover {
 
 .item-text {
     display: block;
-    font-size: 15px;
+    font-size: 13px;
     color: #161d31;
     width: 50px;
     overflow: hidden;
+}
+
+.category .item-text {
+    width: auto;
 }
 
 .nav-item.user .nav-item-div span {
     width: auto;
 }
 
-.nav-items:hover a,
-.nav-items:hover span {
+.nav-items .signin:hover,
+.nav-items .signout:hover,
+.nav-items:hover span.item-text {
     color: crimson !important;
+}
+
+.nav-items.user:hover .account {
+    color: #161d31 !important;
 }
 
 .nav-items:hover .cart-num {
@@ -215,6 +270,9 @@ a, a:hover {
 .nav-items:hover .nav-user-div::before {
     background-image: url(user_color.svg);
 }
+.nav-items.category:hover a::before {
+    background-image: url(menu_color.svg);
+}
 .nav-items.favorite:hover a::before {
     background-image: url(heart_color.svg);
 }
@@ -223,4 +281,58 @@ a, a:hover {
 }
 .nav-items.cart:hover a::before {
     background-image: url(shopping-cart_color.svg);
+}
+
+
+@media screen and (max-width: 992px) {
+    .header {
+        min-height: 50px;
+    }
+
+    .header-wrap {
+        height: 50px;
+    }
+
+    .hidden-sm {
+        display: none;
+    }
+
+    .site-logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .r-header div {
+        margin: 8px;
+    }
+
+    .nav-item-sm.nav-items.category span SVG {
+        height: 20px;
+        width: 20px;
+        margin-right: 10px
+    }
+
+    .nav-user-div::before {
+        margin-top: 0px;
+        width: 23px;
+        height: 23px;
+    }
+
+    .nav-cart a::before {
+        margin-top: 3px;
+        width: 23px;
+        height: 23px;
+    }
+
+    .nav-item.favorite a::before {
+        margin-top: 2px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .nav-item.home a::before {
+        margin-top: 0;
+        width: 25px;
+        height: 25px;
+    }
 }
