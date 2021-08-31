@@ -166,77 +166,80 @@ a, a:hover {
     background-image: url(menu.svg);
 }
 
-.category-container {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 60px;
-    left: -17px;
-    width: 790px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 0.8rem;
-    box-shadow: rgb(26 26 26 / 8%) 0px -1px 4px 0px, rgb(26 26 26 / 12%) 0px 4px 8px 0px;
-    padding: 0px;
-}
-
-.cat-right,
-.cat-left {
-    width: 29rem;
-    flex: 0.4;
-}
-
-.category-choose {
-    display: none;
-}
-
-.category-choose.active {
-    display: block;
-}
-
-.cat-left {
-    border-right: 1px solid #e6ebef;
-}
-
-.subcategory-item,
-.category-item {
-    display: flex;
-    align-items: center;
-    padding: 15px 12px;
-    border-radius: 4px;
-    min-height: 2rem;
-    font-size: 14px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.category-item.active,
-.subcategory-item:hover,
-.category-item:hover {
-    background: #161d31;
-    color: #fff;
-    transition: all 0.3s ease-in-out;
-}
-
-.category-item.active svg,
-.subcategory-item:hover svg,
-.category-item:hover svg {
-    fill: #fff;
-}
-
-.subcategory-item svg,
-.category-item svg {
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-}
-
-.cat-item-selected {
-    margin-left: auto;
-}
-
-.cat-item-selected svg {
-    width: 13px;
-    height: 13px;
+@media screen and (min-width: 992px) {
+    .category-container {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 60px;
+        left: -115px;
+        width: 790px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 0.8rem;
+        box-shadow: rgb(26 26 26 / 8%) 0px -1px 4px 0px, rgb(26 26 26 / 12%) 0px 4px 8px 0px;
+        padding: 0px;
+    }
+    
+    .cat-right,
+    .cat-left {
+        width: 29rem;
+        flex: 0.4;
+    }
+    
+    .category-choose {
+        display: none;
+    }
+    
+    .category-choose.active {
+        display: block;
+    }
+    
+    .cat-left {
+        border-right: 1px solid #e6ebef;
+    }
+    
+    .subcategory-item,
+    .category-item {
+        display: flex;
+        align-items: center;
+        padding: 15px 12px;
+        border-radius: 4px;
+        min-height: 2rem;
+        font-size: 14px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .category-item.active,
+    .subcategory-item:hover,
+    .category-item:hover {
+        background: #161d31;
+        color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .category-item.active svg,
+    .subcategory-item:hover svg,
+    .category-item:hover svg {
+        fill: #fff;
+    }
+    
+    .subcategory-item svg,
+    .category-item svg {
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+    }
+    
+    .cat-item-selected {
+        margin-left: auto;
+    }
+    
+    .cat-item-selected svg {
+        width: 13px;
+        height: 13px;
+    }
+    
 }
 
 .nav-item.favorite a::before {
@@ -312,9 +315,7 @@ a, a:hover {
 .nav-items:hover .nav-user-div::before {
     background-image: url(user_color.svg);
 }
-.nav-items.category:hover a::before {
-    background-image: url(menu_color.svg);
-}
+
 .nav-items.favorite:hover a::before {
     background-image: url(heart_color.svg);
 }
