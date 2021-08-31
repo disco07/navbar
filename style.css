@@ -199,6 +199,7 @@ a, a:hover {
     }
     
     .subcategory-item,
+    .category-item-all,
     .category-item {
         display: flex;
         align-items: center;
@@ -212,6 +213,7 @@ a, a:hover {
     
     .category-item.active,
     .subcategory-item:hover,
+    .category-item-all:hover,
     .category-item:hover {
         background: #161d31;
         color: #fff;
